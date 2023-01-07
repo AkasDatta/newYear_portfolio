@@ -4,6 +4,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* color codes */
 .btn-primary{
     width: 160px;
     height: 64px;
@@ -11,31 +12,57 @@
     background: #F15B22;
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 20px;
     border: 0;
     line-height: 23px;
 }
+.btn-light{
+    width: 160px;
+    height: 64px;
+    border-radius: 5px;        
+    background: #FFFFFF;
+    color: #F15B22;  
+    font-weight: 600;
+    font-size: 20px;
+    border: 0;
+    line-height: 23px;
+}
+
 /* Banner styles */
 
 .banner{
     background-image: url('../images/banner/banner2.png');
-    width: 1600px;
-    height: 809px;
+    width: 100%;
+    text-align: right;
+    padding-top: 230px;
+    padding-bottom: 168px;
+}
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.containerOne{
+    display: flex;
+}
+.firstText{
+    width: 50%;
+}
+.secondText{
+    width: 50%;
     text-align: right;
 }
 .banner-title{
     font-weight: 700;
     font-size: 65px;
-    width: 525px;
-    height: 228px;
     color: #151414;
+    text-align: right ;
 }
 .banner-sub-title{
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 20px;
     color: #444343;
-
+    text-align: right ;
 }
 .banner-description{
     color:#757575;
@@ -64,6 +91,11 @@
 }
 .info-title{
     margin-bottom: 8px;
+    font-style: 16px;
+    color: #444343;
+}
+.fa-solid{
+    color: #16D887;
 }
 
 /* myplan styles */
@@ -96,4 +128,64 @@
     line-height: 28px;
     font-weight: 500;
     font-size: 25px;
+}
+
+/* img styles */
+.gradient{
+    background: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%), url(../images/watch.png);
+    border-radius: 8px;
+    width: 1140px;
+    height: 300px;
+    margin-left: 100px;
+    margin-bottom: 130px;
+}
+.img-title{
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.first-gradient{
+    width: 50%;
+}
+.second-gradient{
+    width: 50%;
+    padding-left: 64px;
+    padding-top: 59px;
+    padding-bottom: 59px;
+}
+.second-gradient h3{
+    margin-bottom: 24px;
+}
+
+/* contact-us styles */
+.contact-us{
+    display: flex;
+    gap: 100px;
+    background: #151414;
+    padding: 130px 200px;
+}
+.contact-us .section-title{
+    text-align: left;
+    color: #FFFFFF;
+}
+.contact-us .section-description{
+    color: #FFFFFF;
+}
+.contact-us input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 1px solid #FFFFFF;
+    width: 325px;
+    height: 64px;
+    border-radius: 5px;        
+    background: #151414;
+    color: #F3F3F3;  
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+input{
+    height: 64px;
+}
+.contact-us a{
+    text-decoration: none;
 }
